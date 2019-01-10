@@ -1,3 +1,5 @@
+data("aaindex")
+
 pub_years <- sapply(aaindex, function(i) i[["D"]]) %>% 
   strsplit(split = "., ") %>% 
   sapply(last) %>% 
